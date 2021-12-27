@@ -13,6 +13,7 @@ git status .... updates the status of the git repo
 git add -A .... adds all
 git commit -m "notes"
 git push
+git pull .... updates all the files from Git to local storage
 """
 
 print("test")
