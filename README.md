@@ -21,6 +21,8 @@ git push
 
 git pull .... updates all the files from Git to local storage
 
+C:\Users\Martti\Python\Python_Finance
+
 Youtube links
 Introduction to Python for Finance - By Richard Moglen - https://www.youtube.com/watch?v=myFD0np9eys
 
