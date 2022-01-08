@@ -2,7 +2,9 @@
 Practicing python with some basic finance builds
 
 cd
+
 cd + folder
+
 ls on mac and dir on windows
 git clone + url .... makes a copy of all the files on your computer in the folder you have onep
 git status .... updates the status of the git repo
