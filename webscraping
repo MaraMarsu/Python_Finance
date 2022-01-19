@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 28 21:08:03 2021
+
+@author: maramarsu
+"""
+
+import webbrowser, sys, pyperclip
+import requests
+import bs4
+
+address = pyperclip.paste()
+
+#webbrowser.open('https://www.google.com/maps/place/' + address)
+
+res = requests.get('https://www.google.fi/maps/dir/IKEA+Espoo,+Espoontie,+Espoo/Lauttasaarentie+24,+00200+Helsinki/@60.1928954,24.6308896,11z/am=t/data=!4m14!4m13!1m5!1m1!1s0x468df3bacc6b1c0b:0x2dc4bca8af6171f2!2m2!1d24.6626878!2d60.2168983!1m5!1m1!1s0x46920a5d291d21cd:0xbc03b697d95df3ee!2m2!1d24.8826928!2d60.1602545!3e0')
+res.raise_for_status()
+exampleSoup = bs4.BeautifulSoup(res.text, 'html.parser')
+var = exampleSoup
+type(exampleSoup)
+#print(res)
+
+#pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div.siAUzd-neVct.section-scrollbox.cYB2Ge-oHo7ed.cYB2Ge-ti6hGc > div.SHl48c-iSfDt-HSrbLb.noprint > div.SHl48c-iSfDt-HSrbLb-header > h1 > span:nth-child(1) > span.delay-light
